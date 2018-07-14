@@ -1,4 +1,68 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
+    height: 100%;
+    width: 100%;
     background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-top: auto;
+}
+
+.a{
+    background-color: aqua;
+}
+
+.clock{
+    padding: 10px;
+    margin: 10px;
+    height: 600px;
+    width: 500px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title{
+    background-color: coral;
+
+}
+
+.subtop{
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left{
+    background-color: coral;
+
+}
+
+.right{
+    background-color: coral;
+
+}
+
+.mainbody{
+    background-color: coral;
+
+}
+
+.subbottom{
+    background-color: coral;
 
 }
