@@ -71,9 +71,24 @@ body{
     height: 80px;
     text-align: center;
     vertical-align: middle;
-    line-height: 80px;
+    line-height: 40px;
     border-radius: 10px;
     box-shadow: 5px 5px 2px rgb(180, 211, 5);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.level2{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
 }
 
 .right{
@@ -82,9 +97,14 @@ body{
     height: 80px;
     text-align: center;
     vertical-align: middle;
-    line-height: 80px;    
+    line-height: 40px;    
     border-radius: 10px;
     box-shadow: 5px 5px 2px rgb(180, 211, 5);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .mainbody{
@@ -100,6 +120,24 @@ body{
     vertical-align: middle;
     line-height: 160px;    
     box-shadow: 5px 5px 2px rgb(180, 211, 5);
+}
+
+#break-label , #strength-label{
+    font-family: 'digital-7';
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 20px;
+    color: honeydew;
+}
+
+.level1{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: cursive;
+    font-size: 20px;
+    color: honeydew;
 }
 
 .subbottom{
