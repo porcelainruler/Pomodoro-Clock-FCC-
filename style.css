@@ -16,6 +16,14 @@ body{
     margin-top: auto;
 }
 
+@font-face {
+    
+    font-family: 'digital-7';
+  
+    src: url('digital_counter_7.ttf');
+  
+}
+
 .a{
     background-color: aqua;
 }
@@ -31,38 +39,76 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px rgb(124, 2, 33);
 }
 
 .title{
     background-color: coral;
-
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px rgb(180, 211, 5);
 }
 
 .subtop{
-    background-color: coral;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    align-content: center;
 }
 
 .left{
     background-color: coral;
-
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(180, 211, 5);
 }
 
 .right{
     background-color: coral;
-
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;    
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(180, 211, 5);
 }
 
 .mainbody{
     background-color: coral;
-
+    width: 320px;
+    height: 160px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    border-radius: 20px;
+    font-family: 'digital-7';
+    font-size: 100px;
+    vertical-align: middle;
+    line-height: 160px;    
+    box-shadow: 5px 5px 2px rgb(180, 211, 5);
 }
 
 .subbottom{
     background-color: coral;
+    /*width: 320px;*/
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px rgb(180, 211, 5);
+    /*line-height: 80px;*/
 
 }
