@@ -24,6 +24,25 @@ body{
   
 }
 
+#beep{
+    display: none;
+}
+
+#start_stop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#start{
+    display: inline-block;
+}
+
+#stop{
+    display: inline-block;
+}
+
 .a{
     background-color: aqua;
 }
@@ -123,7 +142,7 @@ body{
     box-shadow: 5px 5px 2px rgb(180, 211, 5);
 }
 
-#break-label , #strength-label{
+#break-label , #session-label{
     font-family: 'digital-7';
     text-align: center;
     vertical-align: middle;
