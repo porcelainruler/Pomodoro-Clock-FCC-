@@ -130,16 +130,33 @@ body{
     background-color: coral;
     width: 320px;
     height: 160px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 80px;
     border-radius: 20px;
     font-family: 'digital-7';
     color: honeydew;
-    font-size: 100px;
-    vertical-align: middle;
-    line-height: 160px;    
+    font-size: 100px;   
     box-shadow: 5px 5px 2px rgb(180, 211, 5);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#time-label{
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 25px;
+}
+
+#time-left{
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-size: 75px;
 }
 
 #break-label , #session-label{

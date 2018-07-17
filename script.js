@@ -10,6 +10,8 @@ window.onload=function(){
     var sessionlabel=document.getElementById("session-label");
     var sessiondown=document.getElementById("session-down");
     var beep=document.getElementById("beep");
+    var timelabel=document.getElementById("time-label");
+    var unlock=true;
     let intervalId="";
 
     var flag=true;
@@ -21,20 +23,20 @@ window.onload=function(){
     sessionlabel.innerText="25";
 
     breakup.onclick=function(){
-        if(flag && breaklabel.innerText<60)
+        if(unlock && breaklabel.innerText<60)
             breaklabel.innerText=parseInt(breaklabel.innerText)+1;
     }
 
     breakdown.onclick=function(){
         if(breaklabel.innerText<0){
 
-        }else if(flag && breaklabel.innerText>0){
+        }else if(unlock && breaklabel.innerText>0){
             breaklabel.innerText=parseInt(breaklabel.innerText)-1;
         }    
     }
 
     sessionup.onclick=function(){
-        if(flag && sessionlabel.innerText<60){
+        if(unlock && sessionlabel.innerText<60){
             sessionlabel.innerText=parseInt(sessionlabel.innerText)+1;
             if(sessionlabel.innerText<10){
                 display.innerText="0"+parseInt(sessionlabel.innerText) + ":00";
@@ -46,7 +48,7 @@ window.onload=function(){
     sessiondown.onclick=function(){
         if(sessionlabel.innerText<0){
 
-        }else if(flag  && sessionlabel.innerText>0){
+        }else if(unlock  && sessionlabel.innerText>0){
             sessionlabel.innerText=parseInt(sessionlabel.innerText)-1;
             if(sessionlabel.innerText<10){
                 display.innerText="0"+parseInt(sessionlabel.innerText) + ":00";
@@ -71,6 +73,7 @@ window.onload=function(){
 
     start_stop.onclick=function(){
         if(!power){
+            unlock=false;
             power=true;  
             var time="";
 
@@ -99,6 +102,7 @@ window.onload=function(){
             function handeler(){
                 if(mode){
                     console.log(mode);
+                    timelabel.innerText="Break";
                     beep.play();
                     var a1=breaklabel.innerText;
                     a1+=":00";
@@ -109,6 +113,7 @@ window.onload=function(){
                     mode=false;
                 }else{
                     console.log(mode);
+                    timelabel.innerText="Session";
                     beep.play();
                     var a1=sessionlabel.innerText;
                     a1+=":00";
@@ -157,6 +162,7 @@ window.onload=function(){
             }else{
                 clearInterval(intervalId);
                 power=false;
+                unlock=true;
             }
 
     }
